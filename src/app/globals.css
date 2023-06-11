@@ -2,9 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-.vault-border {
-	background: radial-gradient(rgb(9 9 11) 0%, red 50%, rgb(9 9 11) 75%) border-box;
-	border: 150px solid transparent;
+@layer utilities {
+	.vault-border-dark {
+		background: radial-gradient(rgb(9 9 11) 0%, red 50%, rgb(9 9 11) 75%) border-box;
+		border: 150px solid transparent;
+	}
+	.vault-border-light {
+		background: radial-gradient(
+				rgb(243 244 246) 52%,
+				#ff2600 54%,
+				#ff2600 56%,
+				rgb(243 244 246) 58%
+			)
+			border-box;
+		border: 150px solid transparent;
+	}
 }
 
 .vault-glow-animiation {
