@@ -19,21 +19,22 @@
 	}
 }
 
-.vault-glow-animiation {
-	animation: vaultGlow 2s ease-in-out infinite;
+::-webkit-scrollbar {
+	width: 10px;
 }
 
-@keyframe vaultGlow {
-	0% {
-		background: radial-gradient(rgb(9 9 11) 0%, red 50%, rgb(9 9 11) 75%) border-box;
-		border: 150px solid transparent;
-	}
-	50% {
-		background: radial-gradient(rgb(9 9 11) 0%, #d10000 50%, rgb(9 9 11) 75%) border-box;
-		border: 150px solid transparent;
-	}
-	100% {
-		background: radial-gradient(rgb(9 9 11) 0%, red 50%, rgb(9 9 11) 75%) border-box;
-		border: 150px solid transparent;
-	}
+/* Track */
+::-webkit-scrollbar-track {
+	background: transparent;
+	right: 10;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
 }
