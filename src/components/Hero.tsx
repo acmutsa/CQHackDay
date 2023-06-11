@@ -18,12 +18,12 @@ export default function Hero() {
 	return (
 		<main
 			ref={contentWrapperRef}
-			className="min-h-screen max-w-screen overflow-hidden dark:bg-zinc-950 bg-gray-100 flex items-center justify-center"
+			className="min-h-screen max-w-screen overflow-hidden dark:bg-zinc-950 bg-gray-100 flex items-center justify-center border-b-red-600 border-b-2"
 		>
-			<div className="h-[85vh] aspect-square relative">
+			<div className="max-h-[95vh] w-[95vh] aspect-square relative">
 				<motion.div
 					style={{ scale: vaultTransformation, opacity: vaultOpacityTransformation }}
-					className="w-full h-full absolute dark:vault-border-dark vault-border-light rounded-full dark:mix-blend-color-dodge "
+					className="w-full h-full absolute dark:vault-border-dark vault-border-light rounded-full dark:mix-blend-color-dodge"
 				/>
 				<div className="w-full h-full absolute flex items-center justify-center flex-col z-10 text-white">
 					<h1 className="font-sans font-black text-4xl dark:text-white text-gray-800">

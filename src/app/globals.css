@@ -31,10 +31,10 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-	background: #888;
+	background-color: red;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-	background: #555;
+	background: red;
 }

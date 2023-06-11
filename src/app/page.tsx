@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
 import UIMask from "@/components/UIMask";
 import About from "@/components/About";
+import MoreSoon from "@/components/MoreSoon";
 
 export default function Page() {
 	return (
@@ -8,6 +9,7 @@ export default function Page() {
 			<UIMask />
 			<Hero />
 			<About />
+			<MoreSoon />
 		</>
 	);
 }
