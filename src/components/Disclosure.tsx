@@ -27,18 +27,6 @@ const newDisclosure = () => {
 				<div className="grid grid-cols-5 bg-transparent md:p-10 max-w-[1200px] mx-auto">
 					<div className="col-span-2">
 						<div className="w-full flex items-start flex-col justify-start h-full">
-							{/* <Image
-								src="https://static.rowdyhacks.org/img/logos/rh_landing.svg"
-								width={75}
-								height={75}
-								className="h-[75px] w-[75px]"
-							></Image>
-							<div className="ml-[5px]">
-								<h1 className="text-4xl font-black font-sans text-white">RowdyHacks</h1>
-								<h2 className="text-xl font-black font-permanent-marker italic text-white text-center">
-									Into The Unknown
-								</h2>
-							</div> */}
 							<div className="flex flex-col items-center">
 								<h1 className="font-sans font-black text-xl text-white">
 									CodeQuantum <span className="text-red-600">2023</span>
@@ -150,18 +138,6 @@ const newDisclosure = () => {
 			<div className="lg:hidden grid grid-cols-2 bg-black border-t-gray-500 border-t-[1px] min-h-[350px] py-5">
 				<div className="col-span-2 md:col-span-1">
 					<div className="w-full flex items-center justify-center h-full">
-						{/* <Image
-							src="https://static.rowdyhacks.org/img/logos/rh_landing.svg"
-							width={75}
-							height={75}
-							className="h-[75px] w-[75px]"
-						></Image>
-						<div className="ml-[5px]">
-							<h1 className="text-4xl font-black font-sans text-white">RowdyHacks</h1>
-							<h2 className="text-xl font-black font-permanent-marker italic text-white text-center">
-								Into The Unknown
-							</h2>
-						</div> */}
 						<div className="flex flex-col items-center">
 							<h1 className="font-sans font-black text-xl text-white">
 								CodeQuantum <span className="text-red-600">2023</span>
