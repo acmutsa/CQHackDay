@@ -27,7 +27,7 @@ export default function About() {
 						<span className="text-red-600">
 							Association of Computing Machinery - Women's Chapter
 						</span>{" "}
-						at the University of Texas at San Antonio. We are an all-inclusive organization focused
+						at the University of Texas at San Antonio! We are an all-inclusive organization focused
 						on creating an engaging academic, professional, and social network for women and
 						minorities in technology. Our purpose is to connect students with leaders and encourage
 						them to pursue career opportunities in computing fields and to mentor for academic and

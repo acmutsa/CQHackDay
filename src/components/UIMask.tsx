@@ -1,6 +1,6 @@
 export default function UIMask() {
 	return (
-		<div className="w-screen h-screen fixed select-none pointer-events-none z-50">
+		<div className="w-screen h-screen fixed hidden md:block select-none pointer-events-none z-50">
 			{/* Right Side FX */}
 			{/* <div className="right-[10px] dark:bg-red-600 bg-slate-950 w-[3px] h-[10vh] absolute top-[5vh]" />
 			<div className="right-[10px] dark:bg-red-600 bg-slate-950 w-[5px] h-[12vh] absolute top-[25vh]" />
