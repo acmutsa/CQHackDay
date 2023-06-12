@@ -14,7 +14,7 @@ export default function UIMask() {
 			<div className="bg-red-600 w-[10px] h-[3vh] absolute top-[44vh]" />
 			<div className="bg-red-600 w-[3px] h-[5vh] absolute top-[48vh]" />
 			<div className="bg-red-600 w-[3px] h-[10vh] absolute top-[80vh]" />
-			<div className="bg-red-600 w-[3px] h-[5vh] absolute top-[95vh]" />
+			<div className="bg-red-600 w-[3px] h-[3vh] absolute top-[95vh]" />
 		</div>
 	);
 }
