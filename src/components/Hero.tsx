@@ -26,13 +26,13 @@ export default function Hero() {
 						scale: vaultTransformation,
 						opacity: vaultOpacityTransformation,
 					}}
-					className="w-full relative aspect-square max-w-[1000px] dark:vault-border-dark vault-border-light rounded-full dark:mix-blend-color-dodge"
+					className="w-full relative aspect-square max-w-[800px] dark:vault-border-dark vault-border-light rounded-full dark:mix-blend-color-dodge"
 				/>
 				<div className="w-full h-full absolute top-0 flex items-center justify-center flex-col z-10 text-white">
-					<h1 className="font-sans font-black md:text-4xl text-xl dark:text-white text-gray-800">
+					<h1 className="font-sans font-black md:text-4xl text-xl dark:text-white text-zinc-950">
 						CodeQuantum <span className="text-red-600">2023</span>
 					</h1>
-					<h2 className="font-bebas md:text-[16rem] text-[11rem] leading-none dark:text-white text-gray-800">
+					<h2 className="font-bebas md:text-[16rem] text-[11rem] leading-none dark:text-white text-zinc-950">
 						heist
 					</h2>
 					<Link href="#">

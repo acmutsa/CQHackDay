@@ -9,10 +9,10 @@
 	}
 	.vault-border-light {
 		background: radial-gradient(
-				rgb(243 244 246) 52%,
+				rgb(243 244 246) 53%,
 				#ff2600 54%,
 				#ff2600 56%,
-				rgb(243 244 246) 58%
+				rgb(243 244 246) 57%
 			)
 			border-box;
 		border: 150px solid transparent;
