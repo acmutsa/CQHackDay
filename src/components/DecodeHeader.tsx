@@ -51,7 +51,7 @@ export default function DecodeHeader({
 
 	return (
 		<div className={cn("flex flex-col w-min", classname)} ref={ref}>
-			<h1 className="font-bebas text-black text-8xl whitespace-nowrap leading-none">
+			<h1 className="font-bebas text-black md:text-8xl text-7xl whitespace-nowrap leading-none">
 				{decodedText + encodedText}
 			</h1>
 			<div
