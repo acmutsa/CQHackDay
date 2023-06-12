@@ -22,7 +22,7 @@ const newDisclosure = () => {
 	const [showHackathons, setShowHackathons] = useState(false);
 
 	return (
-		<div>
+		<div className="relative z-[100]">
 			<div className="bg-black border-t-gray-500 border-t-[1px] lg:block hidden">
 				<div className="grid grid-cols-5 bg-transparent md:p-10 max-w-[1200px] mx-auto">
 					<div className="col-span-2">
@@ -128,19 +128,19 @@ const newDisclosure = () => {
 					</div>
 					<div className="flex justify-end items-center h-[44px] max-w-[212px] w-full">
 						<div className="flex text-gray-900 bg-white h-[44px] w-[212px] items-center justify-evenly p-[5px] rounded-lg text-xl">
-							<a href="https://twitter.com/rowdyhacks" className="mr-2">
+							<a href="https://twitter.com/cqhacks" className="mr-2">
 								<FaTwitter />
 							</a>
-							<a href="https://www.instagram.com/rowdyhacks/" className="mx-2">
+							<a href="https://www.instagram.com/cqhacks/" className="mx-2">
 								<FaInstagram />
 							</a>
-							<a href="https://www.facebook.com/rowdyhacks" className="mx-2">
+							<a href="https://www.facebook.com/UTSA.ACM" className="mx-2">
 								<FaFacebook />
 							</a>
-							<a href="https://github.com/UTSA-ACM" className="mx-2">
+							<a href="https://github.com/acmutsa" className="mx-2">
 								<FaGithub />
 							</a>
-							<a href="https://go.rowdyhacks.org/discord" className="ml-2">
+							<a href="https://go.cqhacks.org/discord" className="ml-2">
 								<FaDiscord />
 							</a>
 						</div>
@@ -266,19 +266,19 @@ const newDisclosure = () => {
 				<div className="sm:col-span-1 sm:mt-0 mt-10 col-span-2">
 					<div className="flex justify-center items-center min-h-[44px] h-full min-w-[212px] w-full">
 						<div className="flex text-gray-900 bg-white h-[44px] w-[212px] items-center justify-evenly p-[5px] rounded-lg text-xl">
-							<a href="https://twitter.com/rowdyhacks" className="mr-2">
+							<a href="https://twitter.com/cqhacks" className="mr-2">
 								<FaTwitter />
 							</a>
-							<a href="https://www.instagram.com/rowdyhacks/" className="mx-2">
+							<a href="https://www.instagram.com/cqhacks/" className="mx-2">
 								<FaInstagram />
 							</a>
-							<a href="https://www.facebook.com/rowdyhacks" className="mx-2">
+							<a href="https://www.facebook.com/UTSA.ACM" className="mx-2">
 								<FaFacebook />
 							</a>
-							<a href="https://github.com/UTSA-ACM" className="mx-2">
+							<a href="https://github.com/acmutsa" className="mx-2">
 								<FaGithub />
 							</a>
-							<a href="https://go.rowdyhacks.org/discord" className="ml-2">
+							<a href="https://go.cqhacks.org/discord" className="ml-2">
 								<FaDiscord />
 							</a>
 						</div>

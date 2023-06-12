@@ -20,7 +20,7 @@ export default function About() {
 						is dedicated to creating a safe hacking space for students in the tech field.
 					</Balancer>
 				</p>
-				<DecodeHeader>Who are we?</DecodeHeader>
+				<DecodeHeader>Who We Are</DecodeHeader>
 				<p className="font-sans mt-10 font-bold max-w-[50%] text-lg">
 					<Balancer>
 						We are The{" "}
