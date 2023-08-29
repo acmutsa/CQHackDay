@@ -1,51 +1,62 @@
-"use client";
-
 import { useRef } from "react";
 import Link from "next/link";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
-import { motion, useScroll, useSpring, useTransform } from "framer-motion";
+// import { motion, useScroll, useSpring, useTransform } from "framer-motion";
+import Image from "next/image";
+import HeistOSLogin from "./HeistOSLogin";
 
 export default function Hero() {
-	let contentWrapperRef = useRef(null);
-	const { scrollYProgress } = useScroll({
-		target: contentWrapperRef,
-		offset: ["start start", "end start"],
-	});
-	const springyScrollProg = useSpring(scrollYProgress, { stiffness: 400, damping: 90 });
-	const vaultTransformation = useTransform(springyScrollProg, [0, 1], ["150%", "300%"]);
-	const vaultOpacityTransformation = useTransform(springyScrollProg, [0, 0.4], ["100%", "0%"]);
+	// let contentWrapperRef = useRef(null);
+	// const { scrollYProgress } = useScroll({
+	// 	target: contentWrapperRef,
+	// 	offset: ["start start", "end start"],
+	// });
+	// const springyScrollProg = useSpring(scrollYProgress, { stiffness: 400, damping: 90 });
+	// const vaultTransformation = useTransform(springyScrollProg, [0, 1], ["150%", "300%"]);
+	// const vaultOpacityTransformation = useTransform(springyScrollProg, [0, 0.4], ["100%", "0%"]);
 
 	return (
-		<main
-			ref={contentWrapperRef}
-			className="min-h-screen max-w-screen overflow-hidden dark:bg-zinc-950 bg-gray-100 flex items-center justify-center border-b-red-600 border-b-2"
-		>
-			<div className="max-h-[95vh] w-[95vh] aspect-square relative flex items-center justify-center">
-				<motion.div
-					style={{
-						scale: vaultTransformation,
-						opacity: vaultOpacityTransformation,
-					}}
-					className="w-full relative aspect-square max-w-[800px] dark:vault-border-dark vault-border-light rounded-full dark:mix-blend-color-dodge"
-				/>
-				<div className="w-full h-full absolute top-0 flex items-center justify-center flex-col z-10 text-white">
-					<h1 className="font-sans font-black md:text-4xl text-xl dark:text-white text-zinc-950">
-						CodeQuantum <span className="text-red-600">2023</span>
+		<>
+			<div className="absolute top-0 mt-2 bg-white rounded-3xl overflow-hidden w-full left-[50%] translate-x-[-50%] max-w-[800px] h-14 z-10 grid grid-cols-3 pl-5">
+				<div className="flex items-center">
+					<h1 className="text-3xl font-sans font-black">
+						CQ<span className="text-red-500">23</span>
 					</h1>
-					<h2 className="font-bebas md:text-[16rem] text-[11rem] leading-none dark:text-white text-zinc-950">
-						heist
-					</h2>
+				</div>
+				<div></div>
+				<div className="flex items-center justify-end h-full">
 					<Link href="#">
-						<button className="bg-red-700 font-bebas text-2xl px-5 py-3 flex items-center gap-2 rounded relative">
-							<div className="absolute w-full h-full left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 bg-red-700 opacity-50 blur-[30px]"></div>
+						<button className="bg-red-600 h-full font-bebas text-2xl px-4 py-2 flex items-center gap-2 rounded-3xl relative text-white">
 							<span className="flex items-center gap-2 relative z-10">
 								Register Interest
-								<BsFillArrowRightCircleFill className="text-xl" />
+								<BsFillArrowRightCircleFill className="text-md" />
 							</span>
 						</button>
 					</Link>
 				</div>
 			</div>
-		</main>
+			<main className="h-screen max-w-screen w-full bg-red-600 relative">
+				<div className="max-w-6xl mx-auto h-full w-full grid grid-cols-2 gap-x-28 z-20 relative">
+					<div className="flex items-center justify-center flex-col text-white drop-shadow-2xl">
+						<h1 className="font-sans font-black md:text-4xl text-xl">CodeQuantum 2023</h1>
+						<h2 className="font-bebas md:text-[16rem] text-[11rem] leading-none mb-[-2rem] h-min">
+							heist
+						</h2>
+						<h3 className="font-sans font-extrabold text-lg">Nov. 18 - 19th @ UTSA San Pedro I</h3>
+					</div>
+					<div className="z-20 flex items-center justify-center w-full h-full relative">
+						<div className="relative max-w-[75%] w-full aspect-square">
+							<Image
+								src={"/img/logo/cq.svg"}
+								fill
+								alt="The CodeQuantum Logo"
+								className="drop-shadow-2xl hover:scale-105 transition-all duration-150 ease-in-out cursor-pointer"
+							/>
+						</div>
+					</div>
+				</div>
+				<Image fill src={"/img/landing/map.svg"} alt="" className="opacity-10 object-cover" />
+			</main>
+		</>
 	);
 }
