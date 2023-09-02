@@ -1,0 +1,34 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.68902195692067 286.5093512654304"
+    width="21.68902195692067" height="286.5093512654304">
+    <!-- svg-source:excalidraw -->
+
+    <defs>
+        <style class="style-fonts">
+            @font-face {
+                font-family: "Virgil";
+                src: url("https://excalidraw.com/Virgil.woff2");
+            }
+
+            @font-face {
+                font-family: "Cascadia";
+                src: url("https://excalidraw.com/Cascadia.woff2");
+            }
+        </style>
+
+    </defs>
+    <g stroke-linecap="round">
+        <g transform="translate(8.838959690555953 10.223222825303651) rotate(0 2.0055512879043818 133.03145280741154)">
+            <path d="M1.16 -0.22 C1.56 44.01, 2.66 221.64, 2.85 266.29" stroke="#dc2626" stroke-width="2.5" fill="none"
+                stroke-dasharray="8 10"></path>
+        </g>
+        <g transform="translate(8.838959690555953 10.223222825303651) rotate(0 2.0055512879043818 133.03145280741154)">
+            <path d="M-7.94 239.5 C-5.55 248.01, 0.22 256.39, 3.46 264.8" stroke="#dc2626" stroke-width="2.5"
+                fill="none"></path>
+        </g>
+        <g transform="translate(8.838959690555953 10.223222825303651) rotate(0 2.0055512879043818 133.03145280741154)">
+            <path d="M12.59 239.39 C8.03 248.13, 6.85 256.55, 3.46 264.8" stroke="#dc2626" stroke-width="2.5"
+                fill="none"></path>
+        </g>
+    </g>
+    <mask></mask>
+</svg>

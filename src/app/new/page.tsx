@@ -1,9 +1,11 @@
 "use client";
 import { useScroll, useSpring, useTransform, motion, useMotionTemplate } from "framer-motion";
-import { useRef } from "react";
+import { useRef, Fragment } from "react";
 import Image from "next/image";
-
-const sectionCount = 3;
+import About from "@/components/sections/About";
+import WhoWeAre from "@/components/sections/WhoWeAre";
+import Stats from "@/components/sections/Stats";
+import Marquee from "@/components/sections/Marquee";
 
 export default function Page() {
 	const heroRef = useRef<HTMLDivElement>(null);
@@ -18,7 +20,7 @@ export default function Page() {
 	const borderTransformX = useMotionTemplate`calc((100vw - (${boxTransformX} + 10px)) / 2)`;
 	const borderTransformY = useMotionTemplate`max(calc((100vh - ((${boxTransformX} * 11 / 16) - 2px)) / 2), calc(2.5vh + 1px))`;
 	return (
-		<>
+		<Fragment>
 			<svg
 				className="pointer-events-none fixed isolate z-50 mix-blend-soft-light"
 				width="100%"
@@ -63,39 +65,39 @@ export default function Page() {
 				<h3 className="font-mono font-extrabold text-lg">Nov. 18 - 19th @ UTSA San Pedro I</h3>
 			</main>
 			<div className="bg-red-600 min-h-[50vh] w-full max-w-screen"></div>
-			<section className="w-full max-w-screen min-h-screen flex items-center justify-center flex-col p-5 gap-y-5">
-				<h1 className="text-red-600 font-black text-6xl border-b-2 pb-1 border-dashed border-red-600">
-					The Plan
-				</h1>
-				<p className="max-w-[500px] text-center font-bold text-xl">
-					<span className="text-red-600">CodeQuantum</span> is San Antonio's first 24-hour hackathon
-					geared towards <span className="text-red-600">marginalized genders</span> to promote
-					inclusivity and diversity! Organized by the ACM-W chapter at UTSA, CodeQuantum is
-					dedicated to creating a safe hacking space for students in the tech field.
-				</p>
-				<div className="relative max-w-[600px] w-full aspect-video">
-					<Image src={"/img/landing/collab.svg"} alt="People Collaborating" fill />
-				</div>
-			</section>
-			<section className="w-full max-w-screen min-h-screen flex items-center justify-center flex-col p-5 gap-y-5">
-				<h1 className="text-red-600 font-black text-6xl border-b-2 pb-1 border-dashed border-red-600">
-					Who We Are
-				</h1>
-				<p className="max-w-[500px] text-center font-bold text-xl">
-					We are{" "}
-					<span className="text-red-600">
-						The Association of Computing Machinery - Women's Chapter
-					</span>{" "}
-					at the University of Texas at San Antonio! We are an all-inclusive organization focused on
-					creating an engaging academic, professional, and social network for women and minorities
-					in technology. Our purpose is to connect students with leaders and encourage them to
-					pursue career opportunities in computing fields and to mentor for academic and
-					professional success.
-				</p>
-				<div className="relative max-w-[400px] w-full aspect-square">
-					<Image src={"/img/logo/acmw-logo.svg"} alt="People Collaborating" fill />
-				</div>
-			</section>
-		</>
+			<About />
+			<Stats />
+			<WhoWeAre />
+			<Image
+				src="/img/sticker/moneybag.svg"
+				alt="A Money Bag Sticker"
+				width={125}
+				height={125}
+				className="absolute top-[160vh] right-[70%] -translate-x-[70%] -rotate-12 hover:scale-110 duration-300"
+			/>
+			<Image
+				src="/img/sticker/coins.svg"
+				alt="A Coin Stack Sticker"
+				width={125}
+				height={125}
+				className="absolute top-[195vh] left-[85%] -translate-x-[85%] rotate-12 hover:scale-110 duration-300"
+			/>
+			<Image
+				src="/img/sticker/safe2.svg"
+				alt="A Safe Sticker"
+				width={125}
+				height={125}
+				className="absolute top-[210vh] right-[78%] -translate-x-[78%] -rotate-12 hover:scale-110 duration-300"
+			/>
+			<div className="bg-red-600 font-mono text-xs w-min whitespace-nowrap absolute top-[160vh] left-[85%] -translate-x-[85%]">
+				Opening vault...
+				<br />
+				Decoding security...
+				<br />
+				Running {"(code)"}quantum decryption...
+				<br />
+				<div className="animate-pulse">&gt;</div>
+			</div>
+		</Fragment>
 	);
 }
