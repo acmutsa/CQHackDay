@@ -3,12 +3,12 @@ import Marquee from "./Marquee";
 
 export default function WhoWeAre() {
 	return (
-		<section className="w-full max-w-[min(100vw,1000px)] mx-auto min-h-[85vh] grid grid-cols-2 gap-5">
-			<div className="flex items-start justify-center flex-col gap-y-5">
-				<h1 className="text-red-600 font-black text-6xl border-b-2 pb-1 border-dashed border-red-600">
+		<section className="w-full max-w-[min(100vw,1000px)] mx-auto min-h-[85vh] grid grid-cols-1 md:grid-cols-2 gap-5 p-5 mt-20 md:mt-0">
+			<div className="flex md:items-start items-center justify-center flex-col gap-y-5">
+				<h1 className="text-red-600 font-black text-6xl border-b-2 pb-1 border-dashed border-red-600 md:text-left text-center">
 					Who We Are
 				</h1>
-				<p className="max-w-[500px] text-left font-bold text-xl">
+				<p className="max-w-[500px] md:text-left text-center font-bold text-xl">
 					We are{" "}
 					<span className="text-red-600">
 						The Association of Computing Machinery - Women's Chapter

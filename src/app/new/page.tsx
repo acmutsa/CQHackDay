@@ -27,7 +27,7 @@ export default function Page() {
 	const picture_y = useMotionTemplate`max(calc(${picture_y_nopad} - min(5vw, 60px)), 400px)`;
 
 	const picture_x_nopad = useTransform(springyScrollProgHero, [0, 0.7], ["20vw", "100vw"]);
-	const picture_x = useMotionTemplate`min(max(calc(${picture_x_nopad} - min(5vw, 60px)), 600px), 100vw)`;
+	const picture_x = useMotionTemplate`min(max(calc(${picture_x_nopad} - min(10vw, 60px)), 600px), 100vw)`;
 
 	const borderTransformY = useMotionTemplate`calc((100vh - ${picture_y}) / 2)`;
 	const borderTransformX = useMotionTemplate`calc(((100vw - ${picture_x}) / 2))`;
@@ -87,23 +87,23 @@ export default function Page() {
 				alt="A Money Bag Sticker"
 				width={125}
 				height={125}
-				className="absolute top-[160vh] right-[70%] -translate-x-[70%] -rotate-12 hover:scale-110 duration-300"
+				className="absolute top-[160vh] right-[70%] -translate-x-[70%] -rotate-12 hover:scale-110 duration-300 hidden md:block"
 			/>
 			<Image
 				src="/img/sticker/coins.svg"
 				alt="A Coin Stack Sticker"
 				width={125}
 				height={125}
-				className="absolute top-[195vh] left-[85%] -translate-x-[85%] rotate-12 hover:scale-110 duration-300"
+				className="absolute top-[195vh] left-[85%] -translate-x-[85%] rotate-12 hover:scale-110 duration-300 hidden md:block"
 			/>
 			<Image
 				src="/img/sticker/safe2.svg"
 				alt="A Safe Sticker"
 				width={125}
 				height={125}
-				className="absolute top-[210vh] right-[78%] -translate-x-[78%] -rotate-12 hover:scale-110 duration-300"
+				className="absolute top-[210vh] right-[78%] -translate-x-[78%] -rotate-12 hover:scale-110 duration-300 hidden md:block"
 			/>
-			<div className="bg-red-600 font-mono text-xs w-min whitespace-nowrap absolute top-[160vh] left-[85%] -translate-x-[85%]">
+			<div className="bg-red-600 font-mono text-xs w-min whitespace-nowrap absolute top-[160vh] left-[85%] -translate-x-[85%] hidden md:block">
 				Opening vault...
 				<br />
 				Decoding security...
