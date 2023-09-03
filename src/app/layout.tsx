@@ -11,7 +11,7 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
-		<html lang="en">
+		<html lang="en" className="max-w-screen overflow-x-hidden">
 			<body className={bebas.variable + " max-w-screen overflow-x-hidden"}>{children}</body>
 		</html>
 	);

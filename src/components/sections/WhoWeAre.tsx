@@ -21,7 +21,7 @@ export default function WhoWeAre() {
 				</p>
 			</div>
 			<div className="flex items-center justify-end">
-				<div className="bg-red-500 aspect-square w-full rounded-2xl relative max-w-[400px]">
+				<div className="bg-gradient-radial from-red-700 via-red-700 to-red-500 aspect-square w-full rounded-2xl relative max-w-[400px]">
 					<Image
 						src={"/img/logo/acmw-logo.svg"}
 						fill

@@ -12,7 +12,7 @@ module.exports = {
 				bebas: ["var(--font-bebas)", "sans-serif"],
 			},
 			backgroundImage: {
-				"gradient-radial": "radial-gradient(var(--gradient-color-stops))",
+				"gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
 			},
 		},
 	},
