@@ -186,12 +186,6 @@ const newDisclosure = () => {
 								>
 									Open Source
 								</Link>
-								<Link
-									href={"https://github.com/UTSA-ACM/RowdyHacks23/blob/develop/contributions.md"}
-									className="text-sm hover:underline text-amber-300"
-								>
-									Contributions
-								</Link>
 							</div>
 						) : null}
 					</div>

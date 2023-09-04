@@ -1,24 +1,25 @@
 "use client";
-import {
-	useScroll,
-	useSpring,
-	useTransform,
-	motion,
-	useMotionTemplate,
-	useMotionValue,
-} from "framer-motion";
+import { useScroll, useSpring, useTransform, motion, useMotionTemplate } from "framer-motion";
 import { useRef, Fragment } from "react";
 import Image from "next/image";
 import About from "@/components/sections/About";
 import WhoWeAre from "@/components/sections/WhoWeAre";
 import Stats from "@/components/sections/Stats";
-import Marquee from "@/components/sections/Marquee";
+import WorkWithUs from "@/components/sections/WorkWithUs";
+import MoreSoon from "@/components/sections/MoreSoon";
+import Disclosure from "@/components/Disclosure";
+import { Suspense } from "react";
 
 export default function Page() {
 	const heroRef = useRef<HTMLDivElement>(null);
+	const dropPicRef = useRef<HTMLDivElement>(null);
 	const { scrollYProgress: scrollYProgressHero } = useScroll({
 		offset: ["start start", "end start"],
 		target: heroRef,
+	});
+	const { scrollYProgress: scrollYProgressDropPic } = useScroll({
+		offset: ["start end", "end end"],
+		target: dropPicRef,
 	});
 
 	const springyScrollProgHero = useSpring(scrollYProgressHero, { stiffness: 400, damping: 90 });
@@ -31,6 +32,8 @@ export default function Page() {
 
 	const borderTransformY = useMotionTemplate`calc((100vh - ${picture_y}) / 2)`;
 	const borderTransformX = useMotionTemplate`calc(((100vw - ${picture_x}) / 2))`;
+
+	const slideOut = useTransform(scrollYProgressDropPic, [0, 1], ["0vh", "-100vh"]);
 
 	return (
 		<Fragment>
@@ -52,7 +55,7 @@ export default function Page() {
 			<div className="min-h-screen w-screen max-w-screen flex items-center justify-center fixed pointer-events-none z-40">
 				<motion.div
 					className="border-white border box-content block"
-					style={{ width: picture_x, height: picture_y }}
+					style={{ width: picture_x, height: picture_y, y: slideOut }}
 				/>
 			</div>
 			<div className="min-h-screen max-w-screen  flex items-center justify-center fixed pointer-events-none z-30 overflow-hidden">
@@ -65,6 +68,7 @@ export default function Page() {
 						borderLeftWidth: borderTransformX,
 						borderTopWidth: borderTransformY,
 						borderBottomWidth: borderTransformY,
+						y: slideOut,
 					}}
 				/>
 			</div>
@@ -82,6 +86,11 @@ export default function Page() {
 			<About />
 			<Stats />
 			<WhoWeAre />
+			<WorkWithUs ref={dropPicRef} />
+			<MoreSoon />
+			<Suspense>
+				<Disclosure />
+			</Suspense>
 			<Image
 				src="/img/sticker/moneybag.svg"
 				alt="A Money Bag Sticker"
