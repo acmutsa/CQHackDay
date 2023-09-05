@@ -4,7 +4,7 @@ import Link from "next/link";
 export default forwardRef<HTMLElement>(function WorkWithUs(props, ref) {
 	return (
 		<section ref={ref} className="min-h-screen bg-red-600">
-			<div className="grid grid-cols-2 max-w-[1000px] gap-x-5 mx-auto min-h-screen">
+			<div className="grid grid-cols-1 md:grid-cols-2 max-w-[1000px] gap-x-5 mx-auto min-h-screen">
 				<div className="flex flex-col justify-center gap-3 gap-y-7">
 					<div className="bg-white aspect-video w-full rounded-tl-2xl rounded-br-2xl border-red-500 border-2 px-5 shadow-2xl">
 						<h2 className="bg-white font-mono border-red-500 border-2 rounded-full py-2 px-3 w-min text-red-600 font-bold -translate-y-[50%]">
@@ -34,10 +34,11 @@ export default forwardRef<HTMLElement>(function WorkWithUs(props, ref) {
 						</Link>
 					</div>
 				</div>
-				<div className="leading-[0.8] text-[14rem] font-bebas flex flex-col justify-center text-white">
-					<h1>Work</h1>
-					<h1>With</h1>
-					<h1>Us</h1>
+				<div className="leading-[0.8] md:text-[14rem] text-3xl font-bebas flex flex-col justify-center text-white">
+					<h1 className="hidden md:block">Work</h1>
+					<h1 className="hidden md:block">With</h1>
+					<h1 className="hidden md:block">Us</h1>
+					<h1 className="block md:hidden text-center">Work With Us</h1>
 				</div>
 			</div>
 		</section>
