@@ -5,7 +5,7 @@ export default forwardRef<HTMLElement>(function WorkWithUs(props, ref) {
 	return (
 		<section ref={ref} className="min-h-screen bg-red-600">
 			<div className="grid grid-cols-1 md:grid-cols-2 max-w-[1000px] gap-x-5 mx-auto min-h-screen">
-				<div className="leading-[0.8] hidden md:text-[14rem] text-5xl font-bebas md:flex flex-col justify-center text-white">
+				<div className="leading-[0.8] md:hidden md:text-[14rem] text-5xl font-bebas flex flex-col justify-center text-white">
 					<h1 className="block md:hidden text-center">Work With Us</h1>
 				</div>
 				<div className="flex flex-col justify-center gap-3 gap-y-7 px-2">
