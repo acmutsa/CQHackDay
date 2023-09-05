@@ -54,13 +54,13 @@ export default function Page() {
 				</filter>
 				<rect width="100%" height="100%" filter="url(#pedroduarteisalegend)"></rect>
 			</svg>
-			<div className="min-h-screen w-screen max-w-screen flex items-center justify-center fixed pointer-events-none z-40">
+			<div className="min-h-screen w-screen max-w-screen md:flex items-center justify-center fixed pointer-events-none z-40 hidden">
 				<motion.div
 					className="border-white border box-content block"
 					style={{ width: picture_x, height: picture_y, y: slideOut }}
 				/>
 			</div>
-			<div className="min-h-screen max-w-screen flex items-center justify-center fixed pointer-events-none z-30 overflow-hidden">
+			<div className="min-h-screen max-w-screen md:flex hidden items-center justify-center fixed pointer-events-none z-30 overflow-hidden">
 				<motion.div
 					className="overflow-hidden border-red-600 box-content"
 					style={{
