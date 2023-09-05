@@ -9,6 +9,8 @@ import WorkWithUs from "@/components/sections/WorkWithUs";
 import MoreSoon from "@/components/sections/MoreSoon";
 import Disclosure from "@/components/Disclosure";
 import { Suspense } from "react";
+import Link from "next/link";
+import { BsFillArrowRightCircleFill } from "react-icons/bs";
 
 export default function Page() {
 	const heroRef = useRef<HTMLDivElement>(null);
@@ -58,7 +60,7 @@ export default function Page() {
 					style={{ width: picture_x, height: picture_y, y: slideOut }}
 				/>
 			</div>
-			<div className="min-h-screen max-w-screen  flex items-center justify-center fixed pointer-events-none z-30 overflow-hidden">
+			<div className="min-h-screen max-w-screen flex items-center justify-center fixed pointer-events-none z-30 overflow-hidden">
 				<motion.div
 					className="overflow-hidden border-red-600 box-content"
 					style={{
@@ -80,7 +82,15 @@ export default function Page() {
 				<h2 className="font-bebas md:text-[16rem] text-[11rem] leading-none mb-[-2rem] h-min">
 					heist
 				</h2>
-				<h3 className="font-mono font-extrabold text-lg">Nov. 18 - 19th @ UTSA San Pedro I</h3>
+				<h3 className="font-mono font-extrabold text-lg">Nov. 18 - 19th @ UTSA</h3>
+				<Link href="#">
+					<button className="bg-white font-bebas text-2xl px-5 py-3 flex items-center gap-2 rounded relative text-red-600 mt-3">
+						<span className="flex items-center gap-2 relative z-10">
+							Register Interest
+							<BsFillArrowRightCircleFill className="text-xl" />
+						</span>
+					</button>
+				</Link>
 			</main>
 			<div className="bg-red-600 min-h-[50vh] w-full max-w-screen"></div>
 			<About />
