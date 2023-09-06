@@ -83,7 +83,7 @@ export default function Page() {
 					heist
 				</h2>
 				<h3 className="font-mono font-extrabold text-lg">Nov. 18 - 19th @ UTSA</h3>
-				<Link href="#">
+				<Link href="https://form.cqhacks.org/interest">
 					<button className="bg-white font-bebas text-2xl px-5 py-3 flex items-center gap-2 rounded relative text-red-600 mt-3">
 						<span className="flex items-center gap-2 relative z-10">
 							Register Interest
