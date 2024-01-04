@@ -29,7 +29,7 @@ const newDisclosure = () => {
 						<div className="w-full flex items-start flex-col justify-start h-full">
 							<div className="flex flex-col items-center">
 								<h1 className="font-sans font-black text-xl text-white">
-									CodeQuantum <span className="text-red-600">2023</span>
+									CQ <span className="text-red-600">Hack Day</span>
 								</h1>
 								<h2 className="font-bebas text-9xl leading-none text-white">heist</h2>
 							</div>
@@ -140,7 +140,7 @@ const newDisclosure = () => {
 					<div className="w-full flex items-center justify-center h-full">
 						<div className="flex flex-col items-center">
 							<h1 className="font-sans font-black text-xl text-white">
-								CodeQuantum <span className="text-red-600">2023</span>
+								CQ <span className="text-red-600">Hack Day</span>
 							</h1>
 							<h2 className="font-bebas text-9xl leading-none text-white">heist</h2>
 						</div>

@@ -7,10 +7,9 @@ export default function About() {
 				The Plan
 			</h1>
 			<p className="max-w-[500px] text-center font-bold text-xl">
-				<span className="text-red-600">CodeQuantum</span> is San Antonio's first 24-hour hackathon
-				geared towards <span className="text-red-600">marginalized genders</span> to promote
-				inclusivity and diversity! Organized by the ACM-W chapter at UTSA, CodeQuantum is dedicated
-				to creating a safe hacking space for students in the tech field.
+				<span className="text-red-600">CodeQuantum</span> is a free to attend hackathon hosted at
+				UTSA! Organized by the ACM-W chapter at UTSA, CodeQuantum is dedicated to creating a safe
+				hacking space for students in the tech field.
 			</p>
 			<div className="relative max-w-[600px] w-full aspect-video">
 				<Image src={"/img/landing/collab.svg"} alt="People Collaborating" fill />

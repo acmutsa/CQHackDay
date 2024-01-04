@@ -78,11 +78,11 @@ export default function Page() {
 				ref={heroRef}
 				className="w-full max-w-screen min-h-screen bg-red-600 flex items-center justify-center flex-col text-white"
 			>
-				<h1 className="font-sans font-black md:text-4xl text-xl">CodeQuantum 2023</h1>
+				<h1 className="font-sans font-black md:text-4xl text-xl">CQ Hack Day</h1>
 				<h2 className="font-bebas md:text-[16rem] text-[11rem] leading-none mb-[-2rem] h-min">
 					heist
 				</h2>
-				<h3 className="font-mono font-extrabold text-lg">Nov. 18 - 19th @ UTSA</h3>
+				<h3 className="font-mono font-extrabold text-lg">Febuary 3rd 2024 @ San Pedro I, UTSA</h3>
 				<Link href="https://form.cqhacks.org/interest">
 					<button className="bg-white font-bebas text-2xl px-5 py-3 flex items-center gap-2 rounded relative text-red-600 mt-3">
 						<span className="flex items-center gap-2 relative z-10">
