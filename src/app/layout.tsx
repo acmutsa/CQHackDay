@@ -5,7 +5,7 @@ import { Bebas_Neue } from "next/font/google";
 const bebas = Bebas_Neue({ weight: "400", subsets: ["latin"], variable: "--font-bebas" });
 
 export const metadata: Metadata = {
-	title: "CodeQuantum 2023",
+	title: "CodeQuantum 2024",
 	description:
 		"CodeQuantum is San Antonio's hackathon dedicated to creating a safe hacking space for students in the tech field hosted at UTSA!",
 };
