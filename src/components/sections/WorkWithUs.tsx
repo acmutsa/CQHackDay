@@ -14,11 +14,15 @@ export default forwardRef<HTMLElement>(function WorkWithUs(props, ref) {
 							Students
 						</h2>
 						<h1 className="text-4xl font-bebas text-red-600">Interested in helping?</h1>
-						<p className="font-sans font-bold mt-2">
+						<p className="font-sans font-bold mt-2 my-4">
 							We are always looking for volunteers and mentors to help us make CodeQuantum the best
-							hackathon around! If you are interested in becoming a volunteer or mentor, be on the
-							lookout for our signup form coming soon!
+							hackathon around! If you are interested in becoming a volunteer or mentor, click below and fill out our form!
 						</p>
+						<Link href={"https://tally.so/r/n0OJNy"}>
+							<button className="bg-red-600 hover:bg-red-500 rounded px-3 text-white font-bold py-3 transition-colors duration-150">
+								Mentor/Volunteer Form
+							</button>
+						</Link>
 					</div>
 					<div className="bg-white md:aspect-[16/10] aspect-[16/14] w-full rounded-tl-2xl rounded-br-2xl border-red-500 border-2 px-5 shadow-2xl">
 						<h2 className="bg-white border-red-500 border-2 rounded-full py-2 px-3 w-min text-red-600 font-mono font-bold -translate-y-[50%]">
