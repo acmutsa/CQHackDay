@@ -15,3 +15,10 @@ Q.idea/sonarlint/securityhotspotstore/8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a057
 src/app/page.tsx,3\3\3393394e21dbac7686e91ad17c5283fb052d67f3
 B
 src/app/layout.tsx,c\f\cfb47de6ae0cae626eed46461300112ef521d977
+I
+src/components/Header.tsx,a\e\aeb164160f025a7bc1eca5644891a8294266ea1a
+V
+&src/components/sections/WorkWithUs.tsx,c\4\c45ba29c311fd3ee0438ed548a7bf3f92af33352
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
