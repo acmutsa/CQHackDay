@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.schedule-text {
+	@apply font-bebas h-full text-center align-middle flex items-center justify-center;
+}
+
 @layer utilities {
 	.vault-border-dark {
 		background: radial-gradient(rgb(9 9 11) 0%, red 50%, rgb(9 9 11) 75%) border-box;
