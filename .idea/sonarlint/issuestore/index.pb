@@ -22,3 +22,15 @@ V
 :
 
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
+I
+src/app/schedule/page.tsx,8\c\8c5d84a2e477f052c62eae945de5495ee6308883
+B
+tailwind.config.js,0\9\0918cbb76f2c44f223706cec9d31a32cd1177ce4
+T
+$src/components/schedule/Schedule.tsx,7\a\7a4970c2a5c42817619dfb72596fad46f72cc6b7
+Q
+!src/components/schedule/Event.tsx,c\f\cf12c82e9b4349ca3b90184de184ae2fa60a4b8b
+K
+src/components/MoreSoon.tsx,e\b\eb6b9211492c439173bbe1f1b66a93121385754f
+C
+src/app/globals.css,d\a\da1d6f21d01d0f36b5501dffcf7fd160ffcb290d

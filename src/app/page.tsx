@@ -10,7 +10,7 @@ import MoreSoon from "@/components/sections/MoreSoon";
 import Disclosure from "@/components/Disclosure";
 import { Suspense } from "react";
 import Link from "next/link";
-import { BsFillArrowRightCircleFill } from "react-icons/bs";
+import { BsFillArrowRightCircleFill, BsCalendar } from "react-icons/bs";
 
 export default function Page() {
 	const heroRef = useRef<HTMLDivElement>(null);
@@ -83,14 +83,24 @@ export default function Page() {
 					heist
 				</h2>
 				<h3 className="font-mono font-extrabold text-lg">Febuary 3rd 2024 @ UTSA</h3>
-				<Link href="https://form.cqhacks.org/register">
-					<button className="bg-white font-bebas text-2xl px-5 py-3 flex items-center gap-2 rounded relative text-red-600 mt-3">
-						<span className="flex items-center gap-2 relative z-10">
-							Register
-							<BsFillArrowRightCircleFill className="text-xl" />
-						</span>
-					</button>
-				</Link>
+				<span className={"flex items-center gap-5"}>
+					 <Link href="https://form.cqhacks.org/register">
+						  <button className="bg-white font-bebas text-2xl px-5 py-3 flex items-center gap-2 rounded relative text-red-600 mt-3">
+							  <span className="flex items-center gap-2 relative z-10">
+								   Register
+								   <BsFillArrowRightCircleFill className="text-xl" />
+							  </span>
+						  </button>
+					 </Link>
+					<Link href={"/schedule"}>
+						<button className={"bg-white font-bebas text-2xl px-5 py-3 flex items-center gap-2 rounded relative text-red-600 mt-3"}>
+							<span className={"flex items-center gap-2 relative z-10"}>
+								Schedule
+								<BsCalendar className={"text-xl"}/>
+							</span>
+						</button>
+					</Link>
+				</span>
 			</main>
 			<div className="bg-red-600 min-h-[50vh] w-full max-w-screen"></div>
 			<About />
