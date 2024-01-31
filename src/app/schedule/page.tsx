@@ -1,10 +1,16 @@
-import Schedule from "@/components/schedule/Schedule.tsx";
+import Image from "next/image"
 
 export default function Page() {
     return (
         <>
-            <div className={"flex justify-center my-5"}>
-                <Schedule />
+            <div className={"flex justify-center"}>
+                <Image
+                    src="/img/schedule.png"
+                    alt="Schedule"
+                    width={707}
+                    height={1000}
+                />
+
             </div>
         </>
     )

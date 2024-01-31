@@ -14,16 +14,6 @@ module.exports = {
 			backgroundImage: {
 				"gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
 			},
-			gridTemplateRows: {
-				'25': 'repeat(25, minmax(0, 1fr))',
-			},
-			gridRowStart: {
-				'17': '17',
-				'18': '18',
-				'20': '20',
-				'22': '22',
-				'24': '24',
-			}
 		},
 	},
 	plugins: [require("tailwindcss-animate")],
