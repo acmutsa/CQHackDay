@@ -82,7 +82,7 @@ export default function Page() {
 				<h2 className="font-bebas md:text-[16rem] text-[11rem] leading-none mb-[-2rem] h-min">
 					heist
 				</h2>
-				<h3 className="font-mono font-extrabold text-lg">Febuary 3rd 2024 @ UTSA</h3>
+				<h3 className="font-mono font-extrabold text-lg">February 3rd 2024 @ UTSA</h3>
 				<span className={"flex items-center gap-5"}>
 					 <Link href="https://form.cqhacks.org/register">
 						  <button className="bg-white font-bebas text-2xl px-5 py-3 flex items-center gap-2 rounded relative text-red-600 mt-3">
