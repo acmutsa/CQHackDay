@@ -84,10 +84,10 @@ export default function Page() {
 				</h2>
 				<h3 className="font-mono font-extrabold text-lg">February 3rd 2024 @ UTSA</h3>
 				<span className={"flex items-center gap-5"}>
-					 <Link href="https://form.cqhacks.org/register">
+					 <Link href="https://acmutsa.notion.site/Hacker-Survival-Guide-4f55eb54928c421e8ade21da30ed165e?pvs=4">
 						  <button className="bg-white font-bebas text-2xl px-5 py-3 flex items-center gap-2 rounded relative text-red-600 mt-3">
 							  <span className="flex items-center gap-2 relative z-10">
-								   Register
+								   Hacker Guide
 								   <BsFillArrowRightCircleFill className="text-xl" />
 							  </span>
 						  </button>
